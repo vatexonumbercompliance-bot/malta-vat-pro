@@ -5,7 +5,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Scicluna VAT Audit — Independent VAT System Auditor in Malta",
+        title: "Malta VAT EXO Number Compliance — Independent VAT System Auditor",
       },
       {
         name: "description",
@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Scicluna VAT Audit — Independent VAT System Auditor in Malta",
+        content: "Malta VAT EXO Number Compliance — Independent VAT System Auditor",
       },
       {
         property: "og:description",
@@ -71,15 +71,15 @@ function Header() {
         <a href="#top" className="flex items-center gap-2.5">
           <div className="grid size-9 place-items-center rounded-md bg-ink ring-1 ring-black/5">
             <span className="font-mono text-[11px] font-medium tracking-tight text-white">
-              S·V
+              M·V
             </span>
           </div>
           <div className="text-left leading-none">
             <p className="text-sm font-extrabold tracking-tight">
-              Scicluna VAT Audit
+              Malta VAT EXO
             </p>
             <p className="mt-1 font-mono text-[9px] uppercase tracking-[0.18em] text-ink-soft">
-              Malta · VAT
+              Number Compliance
             </p>
           </div>
         </a>
@@ -173,7 +173,7 @@ function CertificateCard() {
       </div>
       <div className="mt-4 flex items-center gap-2 rounded-xl bg-paper-2 px-4 py-3 ring-1 ring-black/5">
         <div className="grid size-8 shrink-0 place-items-center rounded-full bg-ink text-white">
-          <span className="font-mono text-[9px]">S</span>
+          <span className="font-mono text-[9px]">M</span>
         </div>
         <p className="text-[13px] leading-snug text-ink-soft">
           Independent practice · One auditor, start to certificate · Valletta,
@@ -383,7 +383,9 @@ function Footer() {
     <footer className="border-t border-line bg-ink text-white">
       <div className="mx-auto max-w-[440px] px-5 py-8 md:max-w-3xl">
         <div className="flex items-center justify-between">
-          <p className="text-sm font-bold tracking-tight">Scicluna VAT Audit</p>
+          <p className="text-sm font-bold tracking-tight">
+            Malta VAT EXO Number Compliance
+          </p>
           <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-white/50">
             Valletta, Malta
           </p>
@@ -392,7 +394,8 @@ function Footer() {
           Independent auditor · EU VAT directives 2006/112
         </p>
         <p className="mt-2 text-[11px] text-white/40">
-          © {new Date().getFullYear()} Scicluna VAT Audit. All rights reserved.
+          © {new Date().getFullYear()} Malta VAT EXO Number Compliance. All
+          rights reserved.
         </p>
       </div>
     </footer>
