@@ -97,7 +97,7 @@ function Header() {
 function Hero() {
   return (
     <section id="top" className="mx-auto max-w-[440px] px-5 pt-8 pb-6 md:max-w-3xl">
-      <SectionLabel>(a) Independent VAT system auditor</SectionLabel>
+      <SectionLabel>(a) Independent VAT system audits</SectionLabel>
       <h1 className="mt-4 animate-[rise_0.5s_cubic-bezier(0.32,0.72,0,1)_both] text-[2.1rem] leading-[1.02] font-extrabold tracking-tight text-balance md:text-5xl">
         The certificate that unlocks your{" "}
         <span className="text-brand">EXO number</span>.
@@ -291,7 +291,7 @@ function Contact() {
           Start your certificate
         </h2>
         <p className="mt-2 text-[13px] leading-snug text-ink-soft">
-          Tell me a little about your business and I'll respond within one
+          Tell us a little about your business and we'll respond within one
           working day.
         </p>
         <form className="mt-5 space-y-3" onSubmit={handleSubmit}>
@@ -370,7 +370,7 @@ function Footer() {
           </p>
         </div>
         <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.15em] text-white/40">
-          Independent auditor · EU VAT directives 2006/112
+          Independent VAT system audits · EU VAT directives 2006/112
         </p>
         <p className="mt-2 text-[11px] text-white/40">
           © {new Date().getFullYear()} Malta VAT EXO Number Compliance. All
