@@ -104,9 +104,9 @@ function Hero() {
         <span className="text-brand">EXO number</span>.
       </h1>
       <p className="mt-4 max-w-[34ch] animate-[rise_0.5s_cubic-bezier(0.32,0.72,0,1)_0.12s_both] text-[15px] leading-relaxed text-pretty text-ink-soft md:max-w-[52ch] md:text-lg">
-        I audit your VAT system and issue the compliance certificate the
-        Maltese VAT Department requires to grant your business an EXO (exempt)
-        number.
+        We audit your VAT system and issue the compliance certificate the
+        Maltese VAT Department requires to grant your business an EXO
+        (exempt) number.
       </p>
       <div className="mt-6 flex animate-[rise_0.5s_cubic-bezier(0.32,0.72,0,1)_0.18s_both] flex-col gap-3 sm:flex-row sm:items-center">
         <a
@@ -177,8 +177,8 @@ function CertificateCard() {
           <span className="font-mono text-[9px]">M</span>
         </div>
         <p className="text-[13px] leading-snug text-ink-soft">
-          Independent practice · One auditor, start to certificate · Valletta,
-          Malta
+          Independent practice · Direct from enquiry to certificate ·
+          Valletta, Malta
         </p>
       </div>
     </section>
@@ -192,7 +192,7 @@ const processSteps = [
   },
   {
     title: "System audit",
-    body: "I review your processes against EU VAT directives and Maltese VAT rules, then document the findings.",
+    body: "We review your processes against EU VAT directives and Maltese VAT rules, then document the findings.",
   },
   {
     title: "Certificate & submission",
