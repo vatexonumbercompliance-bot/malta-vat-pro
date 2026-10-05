@@ -5,7 +5,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Malta VAT EXO Number Compliance — Independent VAT System Auditor",
+        title: "Malta VAT EXO Number Compliance — Independent VAT System Audits",
       },
       {
         name: "description",
@@ -14,7 +14,8 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Malta VAT EXO Number Compliance — Independent VAT System Auditor",
+        content:
+          "Malta VAT EXO Number Compliance — Independent VAT System Audits",
       },
       {
         property: "og:description",
@@ -54,7 +55,6 @@ function Index() {
         <Hero />
         <CertificateCard />
         <Process />
-        <About />
         <Services />
         <Contact />
 
@@ -97,15 +97,15 @@ function Header() {
 function Hero() {
   return (
     <section id="top" className="mx-auto max-w-[440px] px-5 pt-8 pb-6 md:max-w-3xl">
-      <SectionLabel>(a) Independent VAT system auditor</SectionLabel>
+      <SectionLabel>(a) Independent VAT system audits</SectionLabel>
       <h1 className="mt-4 animate-[rise_0.5s_cubic-bezier(0.32,0.72,0,1)_both] text-[2.1rem] leading-[1.02] font-extrabold tracking-tight text-balance md:text-5xl">
         The certificate that unlocks your{" "}
         <span className="text-brand">EXO number</span>.
       </h1>
       <p className="mt-4 max-w-[34ch] animate-[rise_0.5s_cubic-bezier(0.32,0.72,0,1)_0.12s_both] text-[15px] leading-relaxed text-pretty text-ink-soft md:max-w-[52ch] md:text-lg">
-        I audit your VAT system and issue the compliance certificate the
-        Maltese VAT Department requires to grant your business an EXO (exempt)
-        number.
+        We audit your VAT system and issue the compliance certificate the
+        Maltese VAT Department requires to grant your business an EXO
+        (exempt) number.
       </p>
       <div className="mt-6 flex animate-[rise_0.5s_cubic-bezier(0.32,0.72,0,1)_0.18s_both] flex-col gap-3 sm:flex-row sm:items-center">
         <a
@@ -176,8 +176,8 @@ function CertificateCard() {
           <span className="font-mono text-[9px]">M</span>
         </div>
         <p className="text-[13px] leading-snug text-ink-soft">
-          Independent practice · One auditor, start to certificate · Valletta,
-          Malta
+          Independent practice · Direct from enquiry to certificate ·
+          Valletta, Malta
         </p>
       </div>
     </section>
@@ -191,7 +191,7 @@ const processSteps = [
   },
   {
     title: "System audit",
-    body: "I review your processes against EU VAT directives and Maltese VAT rules, then document the findings.",
+    body: "We review your processes against EU VAT directives and Maltese VAT rules, then document the findings.",
   },
   {
     title: "Certificate & submission",
@@ -230,27 +230,6 @@ function Process() {
   );
 }
 
-function About() {
-  return (
-    <section className="mx-auto max-w-[440px] px-5 py-10 md:max-w-3xl">
-      <SectionLabel>(c) The auditor</SectionLabel>
-      <div className="mt-4 flex items-center gap-4">
-        <div className="grid size-16 shrink-0 place-items-center rounded-xl bg-ink ring-1 ring-black/5">
-          <span className="font-mono text-lg font-medium text-white">BS</span>
-        </div>
-        <div>
-          <p className="text-base font-bold tracking-tight">Bjorn Scicluna</p>
-          <p className="mt-1 text-[13px] leading-snug text-ink-soft">
-            Independent VAT system auditor based in Malta. A one-person
-            practice, so you deal directly with the auditor who signs your
-            certificate.
-          </p>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 const services = [
   {
     title: "VAT system audits",
@@ -262,14 +241,14 @@ const services = [
   },
   {
     title: "Ongoing compliance support",
-    body: "Quarterly checks and a direct line to your auditor between filings.",
+    body: "Quarterly checks and a direct line to your audit team between filings.",
   },
 ];
 
 function Services() {
   return (
     <section className="mx-auto max-w-[440px] px-5 pb-10 md:max-w-3xl">
-      <SectionLabel>(d) Services</SectionLabel>
+      <SectionLabel>(c) Services</SectionLabel>
       <div className="mt-4 space-y-2.5">
         {services.map((service) => (
           <div
@@ -312,7 +291,7 @@ function Contact() {
           Start your certificate
         </h2>
         <p className="mt-2 text-[13px] leading-snug text-ink-soft">
-          Tell me a little about your business and I'll respond within one
+          Tell us a little about your business and we'll respond within one
           working day.
         </p>
         <form className="mt-5 space-y-3" onSubmit={handleSubmit}>
@@ -391,7 +370,7 @@ function Footer() {
           </p>
         </div>
         <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.15em] text-white/40">
-          Independent auditor · EU VAT directives 2006/112
+          Independent VAT system audits · EU VAT directives 2006/112
         </p>
         <p className="mt-2 text-[11px] text-white/40">
           © {new Date().getFullYear()} Malta VAT EXO Number Compliance. All
