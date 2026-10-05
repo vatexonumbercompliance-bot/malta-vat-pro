@@ -275,8 +275,7 @@ function Services() {
   );
 }
 
-// TODO: replace with the real business email before publishing.
-const CONTACT_EMAIL = "enquiries@example.com.mt";
+const CONTACT_EMAIL = "vatexonumbercompliance@gmail.com";
 
 function Contact() {
   const [name, setName] = useState("");
