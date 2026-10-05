@@ -231,27 +231,6 @@ function Process() {
   );
 }
 
-function About() {
-  return (
-    <section className="mx-auto max-w-[440px] px-5 py-10 md:max-w-3xl">
-      <SectionLabel>(c) The auditor</SectionLabel>
-      <div className="mt-4 flex items-center gap-4">
-        <div className="grid size-16 shrink-0 place-items-center rounded-xl bg-ink ring-1 ring-black/5">
-          <span className="font-mono text-lg font-medium text-white">BS</span>
-        </div>
-        <div>
-          <p className="text-base font-bold tracking-tight">Bjorn Scicluna</p>
-          <p className="mt-1 text-[13px] leading-snug text-ink-soft">
-            Independent VAT system auditor based in Malta. A one-person
-            practice, so you deal directly with the auditor who signs your
-            certificate.
-          </p>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 const services = [
   {
     title: "VAT system audits",
@@ -263,7 +242,7 @@ const services = [
   },
   {
     title: "Ongoing compliance support",
-    body: "Quarterly checks and a direct line to your auditor between filings.",
+    body: "Quarterly checks and a direct line to your audit team between filings.",
   },
 ];
 
