@@ -5,7 +5,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Malta VAT EXO Number Compliance — Independent VAT System Auditor",
+        title: "Malta VAT EXO Number Compliance — Independent VAT System Audits",
       },
       {
         name: "description",
@@ -14,7 +14,8 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Malta VAT EXO Number Compliance — Independent VAT System Auditor",
+        content:
+          "Malta VAT EXO Number Compliance — Independent VAT System Audits",
       },
       {
         property: "og:description",

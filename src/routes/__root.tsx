@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Independent VAT system auditor in Malta — compliance certificates for EXO number applications.",
+          "Independent VAT system audits in Malta — compliance certificates for EXO number applications.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
