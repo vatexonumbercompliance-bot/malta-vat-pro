@@ -241,7 +241,7 @@ const certificateFacts = [
   },
   {
     title: "What we examine",
-    body: "How you capture and record transactions, invoice formatting and VAT treatment, reconciliation against returns, filing practices, and record-keeping — documented against the applicable requirements.",
+    body: "How you capture and record transactions, invoice formatting and VAT treatment, and record-keeping — documented against the applicable requirements.",
   },
   {
     title: "What you receive",
