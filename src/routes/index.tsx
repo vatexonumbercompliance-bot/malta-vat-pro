@@ -295,7 +295,7 @@ function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-[440px] px-5 pb-12 md:max-w-3xl">
       <div className="glass relative overflow-hidden rounded-2xl p-6 ring-1 ring-black/5">
-        <SectionLabel>(e) Enquiry</SectionLabel>
+        <SectionLabel>(d) Enquiry</SectionLabel>
         <h2 className="mt-2 text-2xl font-extrabold tracking-tight text-balance">
           Start your certificate
         </h2>
