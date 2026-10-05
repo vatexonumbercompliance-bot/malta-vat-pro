@@ -230,34 +230,43 @@ function Process() {
   );
 }
 
-const services = [
+const certificateFacts = [
   {
-    title: "VAT system audits",
-    body: "End-to-end review of how your business captures, reconciles and reports VAT.",
+    title: "What it is",
+    body: "A signed statement from an independent auditor confirming that your VAT system meets Maltese VAT law and EU VAT directive 2006/112 — the document the VAT Department requires before granting an EXO (exempt) number.",
   },
   {
-    title: "EXO compliance certificates",
-    body: "The independent certificate required to apply for an EXO number with the VAT Department.",
+    title: "Who needs one",
+    body: "Businesses applying for an EXO number with the Maltese VAT Department — typically activities that are exempt from VAT, where the Department wants independent assurance that the underlying system is properly set up.",
   },
   {
-    title: "Ongoing compliance support",
-    body: "Quarterly checks and a direct line to your audit team between filings.",
+    title: "What we examine",
+    body: "How you capture and record transactions, invoice formatting and VAT treatment, reconciliation against returns, filing practices, and record-keeping — documented against the applicable requirements.",
+  },
+  {
+    title: "What you receive",
+    body: "A formal compliance certificate you submit with your EXO application, plus a summary of findings so any gaps can be corrected before you file.",
   },
 ];
 
 function Services() {
   return (
     <section className="mx-auto max-w-[440px] px-5 pb-10 md:max-w-3xl">
-      <SectionLabel>(c) Services</SectionLabel>
-      <div className="mt-4 space-y-2.5">
-        {services.map((service) => (
+      <SectionLabel>(c) EXO compliance certificates</SectionLabel>
+      <h2 className="mt-3 text-2xl font-extrabold tracking-tight text-balance">
+        The certificate behind your EXO application
+      </h2>
+      <div className="mt-5 space-y-2.5">
+        {certificateFacts.map((fact) => (
           <div
-            key={service.title}
+            key={fact.title}
             className="rounded-xl bg-white/70 p-4 ring-1 ring-black/5"
           >
-            <p className="text-sm font-bold tracking-tight">{service.title}</p>
-            <p className="mt-1 text-[13px] leading-snug text-ink-soft">
-              {service.body}
+            <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-brand">
+              {fact.title}
+            </p>
+            <p className="mt-2 text-[13px] leading-snug text-ink-soft">
+              {fact.body}
             </p>
           </div>
         ))}
@@ -286,7 +295,7 @@ function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-[440px] px-5 pb-12 md:max-w-3xl">
       <div className="glass relative overflow-hidden rounded-2xl p-6 ring-1 ring-black/5">
-        <SectionLabel>(e) Enquiry</SectionLabel>
+        <SectionLabel>(d) Enquiry</SectionLabel>
         <h2 className="mt-2 text-2xl font-extrabold tracking-tight text-balance">
           Start your certificate
         </h2>
