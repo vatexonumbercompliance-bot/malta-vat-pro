@@ -55,7 +55,6 @@ function Index() {
         <Hero />
         <CertificateCard />
         <Process />
-        <About />
         <Services />
         <Contact />
 
@@ -249,7 +248,7 @@ const services = [
 function Services() {
   return (
     <section className="mx-auto max-w-[440px] px-5 pb-10 md:max-w-3xl">
-      <SectionLabel>(d) Services</SectionLabel>
+      <SectionLabel>(c) Services</SectionLabel>
       <div className="mt-4 space-y-2.5">
         {services.map((service) => (
           <div
