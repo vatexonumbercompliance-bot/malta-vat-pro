@@ -370,14 +370,9 @@ function Footer() {
   return (
     <footer className="border-t border-line bg-ink text-white">
       <div className="mx-auto max-w-[440px] px-5 py-8 md:max-w-3xl">
-        <div className="flex items-center justify-between">
-          <p className="text-sm font-bold tracking-tight">
-            Malta VAT EXO Number Compliance
-          </p>
-          <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-white/50">
-            Valletta, Malta
-          </p>
-        </div>
+        <p className="text-sm font-bold tracking-tight">
+          Malta VAT EXO Number Compliance
+        </p>
         <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.15em] text-white/40">
           Independent VAT system audits · EU VAT directives 2006/112
         </p>
