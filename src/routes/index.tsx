@@ -68,20 +68,13 @@ function Header() {
   return (
     <header className="sticky top-0 z-30 border-b border-line/70 bg-paper/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-[440px] items-center justify-between px-5 py-4 md:max-w-3xl">
-        <a href="#top" className="flex items-center gap-2.5">
-          <div className="grid size-9 place-items-center rounded-md bg-ink ring-1 ring-black/5">
-            <span className="font-mono text-[11px] font-medium tracking-tight text-white">
-              M·V
-            </span>
-          </div>
-          <div className="text-left leading-none">
-            <p className="text-sm font-extrabold tracking-tight">
-              Malta VAT EXO
-            </p>
-            <p className="mt-1 font-mono text-[9px] uppercase tracking-[0.18em] text-ink-soft">
-              Number Compliance
-            </p>
-          </div>
+        <a href="#top" className="text-left leading-none">
+          <p className="text-sm font-extrabold tracking-tight">
+            Malta VAT EXO
+          </p>
+          <p className="mt-1 font-mono text-[9px] uppercase tracking-[0.18em] text-ink-soft">
+            Number Compliance
+          </p>
         </a>
         <a
           href="#contact"
