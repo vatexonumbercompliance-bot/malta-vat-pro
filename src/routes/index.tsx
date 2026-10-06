@@ -281,6 +281,8 @@ function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [mailtoUrl, setMailtoUrl] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -288,7 +290,25 @@ function Contact() {
     const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\n${message}`,
     );
-    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+    const url = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+    setMailtoUrl(url);
+    const win = window.open(url, "_blank");
+    if (!win) {
+      try {
+        (window.top ?? window).location.href = url;
+      } catch {
+        window.location.href = url;
+      }
+    }
+  };
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(CONTACT_EMAIL);
+      setCopied(true);
+    } catch {
+      setCopied(false);
+    }
   };
 
   return (
@@ -360,6 +380,26 @@ function Contact() {
             Send enquiry
           </button>
         </form>
+        {mailtoUrl && (
+          <div className="mt-4 rounded-xl bg-paper-2 p-4 text-[13px] leading-snug text-ink-soft ring-1 ring-black/5">
+            <p>
+              Your email app should open with the enquiry ready to send. If it
+              didn't,{" "}
+              <a href={mailtoUrl} className="font-semibold text-brand underline">
+                click here
+              </a>{" "}
+              or email us directly at{" "}
+              <span className="font-semibold text-ink">{CONTACT_EMAIL}</span>.
+            </p>
+            <button
+              type="button"
+              onClick={copyEmail}
+              className="mt-3 rounded-full border border-line px-4 py-2 text-xs font-semibold text-ink transition-colors hover:border-ink"
+            >
+              {copied ? "Email address copied" : "Copy email address"}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
